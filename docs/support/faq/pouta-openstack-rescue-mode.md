@@ -2,8 +2,6 @@
 
 In case you run into a situation where your kernel upgrade fails for some reason, and your CentOS 7 instance won't come up, you might find these instructions useful. Sometimes this might seem like a failed resize but the real reason is the restart that a resize requires.
 
-## Symptoms
-
 Check your instance Console Log (web UI: Instances -> <your instance> -> Log)
 
 	[    1.041853] Loading compiled-in X.509 certificates
@@ -43,8 +41,6 @@ Check your instance Console Log (web UI: Instances -> <your instance> -> Log)
 
 
 The log says that the instance couldn't boot because it can't find root "Kernel panic - not syncing: VFS: Unable to mount root fs onunknown-block(0,0)". The fix is to use (some) previous, working kernel. Since you can't boot the server, you have to make the fix to the Volume (boot files) by using another instance.
-
-## How to fix the issue
 
 Note, that you will modify grub, there are probably better ways to do it, so do not be afraid to see what other guides there are on the internet. This FAQ is mostly meant to show that there is a command named `nova rescue`. There is also a command named `openstack server rescue` which is almost the same as `nova rescue` but is missing the `--image` flag which is almost *always* required when rescuing servers.
 
