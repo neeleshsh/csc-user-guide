@@ -16,6 +16,7 @@ nav:
      - How to increase disk quotas: accounts/how-to-increase-disk-quotas.md
      - How to access Mahti large partition: accounts/how-to-access-mahti-large-partition.md
      - How to view billing unit usage: accounts/how-to-view-billing-unit-usage.md
+     - User and Project Data Lifecycle: accounts/user-and-project-data-lifecycle.md
      - Billing: accounts/billing.md
      - FMI: accounts/fmi.md
   - Computing:
